@@ -20,5 +20,9 @@ from django.db import models
 #     era = ('historic', 'contemparary', 'ambiguous')
 
 
-class book(models.Model):
+class Book(models.Model):
     title = models.CharField(max_length=1000)
+
+    # import @python_2_unicode_compatible if desired
+    def __str__(self):
+        return self.title
