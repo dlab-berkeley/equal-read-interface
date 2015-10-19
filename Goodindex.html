@@ -2,7 +2,7 @@
 <html>
 <head>
  
-  <title>Bootstrap Case</title>
+  <title>Equal Reads</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,7 +16,20 @@
   p {
     font-size: 30px;
   }
-  
+  input.form-control {
+    height: 68px;
+    font-size: 33px;
+}
+  button.btn.btn-default.dropdown-toggle {
+    height: 68px;
+    font-size: 28px;
+}
+button.btn.btn-default {
+    height: 68px;
+}
+  .input-group {
+    margin-left: -49px;
+}
   
   div#section42 {
     height: 600px !important;
@@ -34,7 +47,7 @@
   #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
   #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
   #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:530px;color: #fff; background-color: #009688;}
+  #section42 {padding-top:50px;height:530px;color: #8B8B8B;}
   </style>
 </head>
 
@@ -68,35 +81,55 @@
 </nav>    
 
 
-<div id="section100" class="container">
-<select class="selectpicker" multiple data-max-options="2">
-    <option>Mustard</option>
-    <option>Ketchup</option>
-    <option>Relish</option>
-  </select>
- 
-  <select class="selectpicker" multiple  data-max-options="2">
-    <optgroup label="Condiments" data-max-options="2">
-      <option>Mustard</option>
-      <option>Ketchup</option>
-      <option>Relish</option>
-    </optgroup>
-    <optgroup label="Breads" data-max-options="2">
-      <option>Plain</option>
-      <option>Steamed</option>
-      <option>Toasted</option>
-    </optgroup>
-  </select>
+
+<div id="section42" class="container-fluid">
+
+<div class="jumbotron">
+<div class="container">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+        <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Author</a></li>
+                      <li><a href="#its_equal">Genre</a></li>
+                      <li><a href="#greather_than">Age greater than ></a></li>
+                      <li><a href="#less_than">Age Less than < </a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anything</a></li>
+                    </ul>
+                </div>
+
+<!--                 TODO: Make the search Icon link to the "searchresults page"
+ -->                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                <span class="input-group-btn">
+                  <a href="searchresults.html" class="glyphicon glyphicon-search" ></a>
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search">
+                    </span></button>
+                </span>
+            </div>
+        </div>
+  </div>
+</div>
 
 </div>
-<div id="section42" class="container-fluid">
- 
+
+<blockquote class="blockquote-reverse">
+  <p><i>"To increase diversity in childrens literature because all kids deserve to see themselves, their communities, and a world of possibility in the books they read."</i></p>
+</blockquote>
 
 
 </div>
 <div id="section1" class="container-fluid">
   <h1>Mission </h1>
-  <p><i>"To increase diversity in childrens literature because <br/> all kids deserve to see themselves, their communities, and a world of possibility <br/> in the books they read."</i></p>
+  <blockquote class="blockquote-reverse">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec hendrerit nisl, ut bibendum eros. Maecenas in nisl urna. Aliquam fringilla porttitor ex, congue congue ante viverra sed. Praesent nec interdum nibh. In hac habitasse platea dictumst. Integer eu elementum tellus, ac ultricies metus. Proin dolor ipsum, facilisis eu accumsan tincidunt, scelerisque sed velit. Pellentesque in sem sit amet dolor consequat pharetra. Curabitur quis sem eu nisl pharetra rutrum. Nullam consectetur varius sapien a porttitor.</p>
+</blockquote>
 </div>
 
 <div id="section3" class="container-fluid">
@@ -104,13 +137,25 @@
   <p>Not sure what to read? we've created a collection of recomended books from our reviewers</p>
 </div>
 <div id="section41" class="container-fluid">
-  <h1>Section 4 Submenu 1</h1>
-  <p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+  <h1>What People say about us</h1>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec hendrerit nisl, ut bibendum eros. Maecenas in nisl urna. Aliquam fringilla porttitor ex, congue congue ante viverra sed. Praesent nec interdum nibh. In hac habitasse platea dictumst. Integer eu elementum tellus, ac ultricies metus" -Ashley, <i>School Teacher</i> </p>
 </div>
 
 <div id="section2" class="container-fluid">
-  
+  <div class="row">
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-3">        
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>      
+    </div>
+    <div class="col-md-3">        
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>      
+    </div>
+    
+  </div>
 </div>
+
 <script>
 $(document).ready(function(){
   // Add scrollspy to <body>
