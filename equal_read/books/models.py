@@ -1,11 +1,20 @@
 from django.db import models
 
-# TODO Needs to be completed
+
 # class reviewers(models.Model):
-#     title = models.CharField(maxlength = 20)
-#     gender = ('M', 'F', 'All')
-#     roles =
-#     ages =
+#     listTitle = models.CharField(maxlength=1000)
+#     title = models.CharField(maxlength=1000)
+#     MALE = 'Male'
+#     FEMALE = 'Female'
+#     genderChoices = {
+#         (MALE, 'Male'),
+#         (FEMALE, 'Female'),
+#         (OTHER, )
+#     }
+#     gender = models.CharField(max_length=10,
+#         choices=genderChoices)
+#     roles = 
+#     ages = 
 #     ethnicityCode =
 #     abilityCode =
 #     sexualOrientation =
@@ -21,7 +30,30 @@ from django.db import models
 
 
 class Book(models.Model):
+    listTitle = models.CharField(maxlength=1000)
     title = models.CharField(max_length=1000)
+    source = 
+    isbn = 
+    author = 
+    illustrator = 
+    publisher = 
+    year = 
+    pages = 
+    readingLevel = 
+    gradeLevel = 
+    nameOfReader = 
+    gender = 
+    genderExpression = 
+    age = 
+    ethnicity = 
+    disability = 
+    sexualOrientation = 
+    education = 
+    income = 
+    religion = 
+    geography = 
+    familyStatus = 
+    notesByReader = 
 
     # import @python_2_unicode_compatible if desired
     def __str__(self):
