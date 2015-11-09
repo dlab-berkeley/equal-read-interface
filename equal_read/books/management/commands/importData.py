@@ -23,7 +23,7 @@ class Command(BaseCommand):
                 if row[1] == '':
                     row[1] = 'dlab'
                 if row[2] == '':
-                    row[2] = random.choice(range(1e13, 1e14))
+                    row[2] = str(random.choice(range(int(1e12), int(1e13))))
                 if row[4] == '':
                     row[4] = random.choice(authors)
                 if row[5] == '':
@@ -31,9 +31,9 @@ class Command(BaseCommand):
                 if row[6] == '':
                     row[6] = 'dlab'
                 if row[7] == '':
-                    row[7] = random.choice(range(2015))
+                    row[7] = str(random.choice(range(2015)))
                 if row[8] == '':
-                    row[8] = random.choice(range(100))
+                    row[8] = str(random.choice(range(100)))
                 if row[9] == '':
                     row[9] = 'unknown'
                 if row[10] == '':
@@ -45,7 +45,7 @@ class Command(BaseCommand):
                 if row[13] == '':
                     row[13] = ''
                 if row[14] == '':
-                    row[14] = random.choice(range(120))
+                    row[14] = str(random.choice(range(120)))
                 if row[15] == '':
                     row[15] = 'not specified'
                 if row[16] == '':
@@ -55,7 +55,7 @@ class Command(BaseCommand):
                 if row[18] == '':
                     row[18] = 'Bachelor'
                 if row[19] == '':
-                    row[19] = random.choice(range(1e5))
+                    row[19] = str(random.choice(range(int(1e5))))
                 if row[20] == '':
                     row[20] = 'unknown'
                 if row[21] == '':
