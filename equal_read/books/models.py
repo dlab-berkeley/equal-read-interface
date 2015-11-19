@@ -37,7 +37,7 @@ class Book(models.Model):
     author = models.CharField(max_length=1000, null=True)
     illustrator = models.CharField(max_length=1000, null=True)
     publisher = models.CharField(max_length=1000, null=True)
-    year = models.CharField(max_length=4, null=True)
+    year = models.DateTimeField(auto_now_add=True)
     pages = models.CharField(max_length=1000, null=True)
     readingLevel = models.CharField(max_length=1000, null=True)
     gradeLevel = models.CharField(max_length=1000, null=True)

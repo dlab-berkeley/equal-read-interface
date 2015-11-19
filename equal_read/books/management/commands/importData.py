@@ -1,8 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from books.models import Book
 
-import csv
-import random
+import csv, random, datetime
 
 
 class Command(BaseCommand):
@@ -31,7 +30,7 @@ class Command(BaseCommand):
                 if row[6] == '':
                     row[6] = 'dlab'
                 if row[7] == '':
-                    row[7] = str(random.choice(range(2015)))
+                    row[7] = str(datetime.date.today())
                 if row[8] == '':
                     row[8] = str(random.choice(range(100)))
                 if row[9] == '':
